@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="src/img/fovicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="Bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="src/style.css">
+  <link rel="stylesheet" href="src/styleLoad.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <title>ModuLar</title>
+</head>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="Bootstrap/Boot-js/bootstrap.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+      new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+  });
+</script>
+
+<body>
+  <div class="wall-background"></div>
+  <div class="wallpaper" style="position: absolute; width: auto; opacity:98%;">
+    <svg width="1000px" height="100vh" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <pattern id="textura" x="0" y="0" width="1" height="1" patternContentUnits="objectBoundingBox">
+          <image xlink:href="src/img/texture4.PNG" x="0" y="0" width="1" height="1" preserveAspectRatio="none" />
+        </pattern>
+      </defs>
+      <polygon points="0,0 400,0 850,800 0,800" fill="url(#textura)" stroke="white" stroke-width="0.3" />
+    </svg>
+  </div>
+  <div class="preloader">
+    <div class="load">
+      <div class="elements">
+        <div class="element "></div>
+        <div class="element2 "></div>
+      </div>
+    </div>
+  </div>
+  <!-- <img class="wall-logo" src="src/img/logo-wall.png"> -->
+  <header>
+    <div class="main">
+      <div class="picturesHome">
+        <div class="bloc">
+          <div class="bloc1">
+            <img id="show1" src="src/img/66440899_1203024996525727_8674323513886113792_n.jpg"
+              style="width: 650px; height: 500px;">
+            <img id="show2" src="src/img/67186399_1213442475483979_4530003772046311424_n.jpg "
+              style="width: 650px; height: 500px;">
+            <img id="show3" src="src/img/67878362_1223867134441513_9144109742551990272_n.jpg"
+              style="width: 650px; height: 500px;">
+            <img id="show4" src="src/img/93109234_1440978229397068_1263121105472716800_n.jpg"
+              style="width: 650px; height: 500px;">
+          </div>
+        </div>
+      </div>
+
+      <div class="welcome">
+        <h3>Bem-vindo!</h3>
+      </div>
+
+      <div class="slogan">
+        <h1>MODULAR</h1>
+        <h2>CONSTRUINDO SOLUÇÕES</h2>
+      </div>
+
+      <div class="productMain">
+        <div class="product">
+          ASSINAR PLANO
+        </div>
+      </div>
+
+
+      <div class="partner">
+        <img src="../src/img/sketchup-removebg-preview.png" alt="not found" style="width: 100px; height: 100px;">
+      </div>
+
+    </div>
+  </header>
+
+  <div class="container-H" id="barH">
+    <nav class="navbar navbar-expand-lg navbar-h ">
+      <div class="container-fluid container-fluid-h">
+        <div class="logo logo-H">
+          <div style="background-color: rgba(255, 255, 255, 0.459); border-radius: 50%;"><img src="src/img/logoBlack.png" style="scale: 1;"></div>
+        </div>
+        <i class="bi bi-person-circle bi-user user" data-bs-toggle="tooltip" data-bs-placement="bottom"
+          data-bs-custom-class="custom-tooltip" data-bs-title="Usuário"
+          style="font-size: 35px; color: rgba(255, 255, 255, 0.678);"></i>
+        <div class="Login">
+          <i class="bi bi-box-arrow-in-right" id="login"
+            style="font-size: 27px; color: rgba(255, 255, 255, 0.699);"></i>
+          <div class="subtitle">Login</div>
+        </div>
+        <!-- <div class="insta-H">
+            <div class="instagram-logo" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip"
+            data-bs-title="Social Page">
+            <i class="bi bi-instagram" style="font-size: 25px; color: rgba(255, 255, 255, 0.699) ;"></i>
+            <div class="language" style="font-size: 12px;">PT-BR</div>
+          </div>
+        </div> -->
+        <div class="boxBurguer">
+          <div class="burguer burguer-h">
+            <div class="menu"></div>
+          </div>
+        </div>
+      </div>
+
+    </nav>
+  </div>
+
+  <div class="container-v" id="barV">
+    <nav class="navbar navbar-expand-lg border-0 navbar-v  ">
+      <div class="container-fluid-v">
+        <div class="logo">
+          <div style="background-color: rgba(255, 255, 255, 0.459); border-radius: 50%;"><img src="src/img/logoBlack.png" style="scale: 1;"></div>
+          <i class="bi bi-person-circle bi-user user" id="userLog2" data-bs-toggle="tooltip" data-bs-placement="left"
+            data-bs-custom-class="custom-tooltip" data-bs-title="Usuário"
+            style="font-size: 35px; color: rgba(255, 255, 255, 0.678);"></i>
+
+        </div>
+        <div class="burguer burguer-v">
+          <div class="menu"></div>
+        </div>
+        <div class="roundedX"></div>
+        <div class="instagram-logo" data-bs-toggle="tooltip" data-bs-placement="left"
+          data-bs-custom-class="custom-tooltip" data-bs-title="Social Page">
+          <i class="bi bi-instagram" style="font-size: 25px; color: rgba(255, 255, 255, 0.699) ;">
+          </i>
+          <div class="language" style="font-size: 12px;">PT-BR</div>
+        </div>
+        <div class="Login">
+          <i class="bi bi-box-arrow-in-right" id="login2"
+            style="font-size: 27px; color: rgba(255, 255, 255, 0.699) ;"></i>
+          <div class="subtitle" id="subtitle">Login</div>
+        </div>
+        <div class="clock">
+          <!-- <span id="spt" style="font-size: 16px;">Hours </span> -->
+          <div class="horas" style="font-size: 9px;">
+            <p class="display-6 hours" style="margin: 0px; font-size: 24px;">HH</p>:
+          </div>
+          <p class="display-6 minut" style="margin: 0px; font-size: 18px;">MM</p>
+          <p class="display-6 second" style="font-size: 10px; margin: 0px;">SS</p>
+        </div>
+      </div>
+
+    </nav>
+  </div>
+  <div class="menuMain-V " id="menuMain">
+
+    <div class="container listMain">
+      <di class="list-group-flush list listTransition">
+        <div class="mid-1 mid">
+          <div class="midline1" style="height: 1px;"></div>
+          <li class="list-group-item bg-transparent ">HOME</li>
+          <div class="midline2" style="height: 1px;"></div>
+        </div>
+        <div class="mid-2 mid">
+          <div class="midline1" style="height: 1px;"></div>
+          <li class="list-group-item bg-transparent">PRODUTOS</li>
+          <div class="midline2" style="height: 1px;"></div>
+        </div>
+        <div class="mid-3 mid">
+          <div class="midline1" style="height: 1px;"></div>
+          <li class="list-group-item bg-transparent">EMPRESA</li>
+          <div class="midline2" style="height: 1px;"></div>
+        </div>
+        <div class="mid-4 mid">
+          <div class="midline1" style="height: 1px;"></div>
+          <li class="list-group-item bg-transparent">BLOG</li>
+          <div class="midline2" style="height: 1px;"></div>
+        </div>
+      </di>
+    </div>
+  </div>
+
+  <div class="Company bg-black whoWe" id="company" style="color: white;padding-left: 20px;padding-right: 20px">
+    <header class="container my-5 border-bottom">
+      <h1 class="display-6 text-center ">Sobre a Empresa</h1>
+      <p class="text-center">Iniciada em 2023. Somos uma startup apaixonada por tecnologia, dedicada a criar e
+        desenvolver soluções
+        práticas
+        para o nicho de clientes que inclui arquitetos, designers e projetistas. Nossa equipe é composta por
+        especialistas
+        comprometidos e profissionais prontos para oferecer total suporte a esses profissionais. Nosso objetivo é
+        promover
+        a praticidade e aprimorar as experiências para com seus projetos. E estamos empenhados em simplificar
+        processos, a fim de proporcionar maior valor e satisfação aos seus negócios."</p>
+
+
+
+
+      </p>
+    </header>
+    <main class="container">
+
+      <section class="row weComp" style="gap: 50px;">
+        <div class="col-md-6">
+          <div>
+            <h3 class="display-6">Nossos Valores</h3>
+            <p>Trabalhamos em estreita colaboração com cada cliente para desenvolver uma aplicação personalizada que
+              atenda a todas as suas necessidades e aprimore cada negociação.
+            </p>
+
+            <p>Nossos produtos oferecem uma dinâmica simples e uma interface colaborativa. Algumas de nossas bibliotecas
+              são adaptadas exclusivamente às necessidades dos nossos clientes. </p>
+
+            <p>Mantemos-nos atualizados com as últimas tendências em design e tecnologia de mercado, buscando
+              constantemente novas maneiras de superar desafios e criar soluções inovadoras.</p>
+
+
+
+          </div>
+        </div>
+
+        <div class="image" style="width: 500px; margin: 10px; ">
+          <img src="src/img/como-funciona-um-escritorio-virtual.png" style="width: 100%; border-radius: 50px;">
+        </div>
+
+
+        <div class="image" style="width: 500px; margin: 10px; margin-top: 100px;">
+          <img src="src/img/suport.PNG" style="width: 100%; border-radius: 50px;">
+        </div>
+        <div class="col-md-6" style="margin-top: 100px;">
+          <div>
+            <h3 class="display-6"> Por que contratar nossos serviços?</h3>
+
+            <p>Em busca de qualificações e recolocação competitiva no mercado, seus negócios podem conquistar vantagens
+              através de uma parceria com nossa empresa. Oferecemos planos acessíveis e assistência completa, incluindo
+              suporte técnico online e presencial.</p>
+
+
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+
+
+  </div>
+
+
+
+
+
+  <footer class="footerFix" style="z-index: 999;">
+    &copy; 2023 Modular, Inc. Todos os direitos reservados.
+  </footer>
+  <footer class="footer">
+    <div id="map" style="width: 50%; height: auto; border: 1px solid rgba(0, 0, 0, 0.425); margin: 5px;">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117704.98166293785!2d-45.28605482755555!3d-22.7920614201943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ccc43d2f182b09%3A0x4ff95ebd5d4a29a7!2sGuaratinguet%C3%A1%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1699303920274!5m2!1spt-BR!2sbr"
+        width="100%" height="250px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class='contato'>
+      <p class="contact"><span style="font-weight: bold;">Telefone :</span> +55 12 1 1212-1212<i class="bi bi-whatsapp"
+          style="margin-left: 30px; font-size: 25px;"></i></p><br>
+      <p class="contact"><span style="font-weight: bold;">Email :</span> modular@modular.com<i class="bi bi-envelope-at"
+          style="margin-left: 30px; font-size: 25px;"></i></p><br>
+      <p><span style="font-weight: bold;">CNPJ :</span> 12.312.312/0001-20</p>
+    </div>
+  </footer>
+
+
+  <script type="module" src="js/index.js"></script>
+  <script type="module" src="js/indexUser.js"></script>
+
+
+</body>
+
+<script> window.addEventListener('load', function () {
+    const load = document.querySelector('.preloader');
+    setTimeout(() => {
+      load.classList.add('FadeOut');
+    }, 3000);
+  })</script>
+
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../src/img/fovicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../Bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="../src/style.css">
+  <link rel="stylesheet" href="../src/styleLoad.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <title>ModuLar</title>
+</head>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="../Bootstrap/Boot-js/bootstrap.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+      new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+  });
+</script>
+
+<body>
+
+  <div style="top: 0; position:fixed; z-index: -999; width: 100vw; height: 100vh;">
+    <img src="../src/img/plano-de-fundo.png" alt="" style="width: 100%; height: 100%; filter: blur(3px);">
+  </div>
+
+  <div class="preloader">
+    <div class="load">
+      <div class="elements">
+        <div class="element "></div>
+        <div class="element2 "></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-H" id="barH">
+    <nav class="navbar navbar-expand-lg navbar-h ">
+      <div class="container-fluid container-fluid-h">
+        <div class="logo logo-H">
+          <div style="background-color: rgba(255, 255, 255, 0.459); border-radius: 50%;"><img
+              src="../src/img/logoBlack.png" style="scale: 1;"></div>
+        </div>
+        <i class="bi bi-person-circle bi-user user" data-bs-toggle="tooltip" data-bs-placement="bottom"
+          data-bs-custom-class="custom-tooltip" data-bs-title="Usuário"
+          style="font-size: 30px; color: rgba(255, 255, 255, 0.678);"></i>
+        <div class="Login">
+          <i class="bi bi-box-arrow-in-right" id="login"
+            style="font-size: 27px; color: rgba(255, 255, 255, 0.699);"></i>
+          <div class="subtitle">Login</div>
+        </div>
+        <!-- <div class="insta-H">
+              <div class="instagram-logo" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip"
+              data-bs-title="Social Page">
+              <i class="bi bi-instagram" style="font-size: 25px; color: rgba(255, 255, 255, 0.699) ;"></i>
+              <div class="language" style="font-size: 12px;">PT-BR</div>
+            </div>
+          </div> -->
+        <div class="boxBurguer">
+          <div class="burguer burguer-h">
+            <div class="menu"></div>
+          </div>
+        </div>
+      </div>
+
+    </nav>
+  </div>
+
+  <div class="container-v" id="barV">
+    <nav class="navbar navbar-expand-lg border-0 navbar-v  ">
+      <div class="container-fluid-v">
+        <div class="logo">
+          <div style="background-color: rgba(255, 255, 255, 0.459); border-radius: 50%;"><img
+              src="../src/img/logoBlack.png" style="scale: 1;"></div>
+          <i class="bi bi-person-circle bi-user user" id="userLog2" data-bs-toggle="tooltip" data-bs-placement="left"
+            data-bs-custom-class="custom-tooltip" data-bs-title="Usuário"
+            style="font-size: 30px; color: rgba(255, 255, 255, 0.678);"></i>
+
+        </div>
+        <div class="burguer burguer-v">
+          <div class="menu"></div>
+        </div>
+        <div class="roundedX"></div>
+        <div class="instagram-logo" data-bs-toggle="tooltip" data-bs-placement="left"
+          data-bs-custom-class="custom-tooltip" data-bs-title="Social Page">
+          <i class="bi bi-instagram" style="font-size: 25px; color: rgba(255, 255, 255, 0.699) ;">
+          </i>
+          <div class="language" style="font-size: 12px;">PT-BR</div>
+        </div>
+        <div class="Login">
+          <i class="bi bi-box-arrow-in-right" id="login2"
+            style="font-size: 27px; color: rgba(255, 255, 255, 0.699) ;"></i>
+          <div class="subtitle" id="subtitle">Login</div>
+        </div>
+        <div class="clock">
+          <!-- <span id="spt" style="font-size: 16px;">Hours </span> -->
+          <div class="horas" style="font-size: 9px;">
+            <p class="display-6 hours" style="margin: 0px; font-size: 24px;">HH</p>:
+          </div>
+          <p class="display-6 minut" style="margin: 0px; font-size: 18px; margin-left: 4px;">MM</p>
+          <p class="display-6 second" style="font-size: 12px; margin: 0px;">SS</p>
+        </div>
+      </div>
+
+    </nav>
+  </div>
+  <div class="menuMain-V " id="menuMain">
+
+    <div class="container listMain">
+      <di class="list-group-flush list listTransition">
+        <div class="mid-1 mid">
+          <div class="midline1" style="height: 1px;"></div>
+          <li class="list-group-item bg-transparent ">HOME</li>
+          <div class="midline2" style="height: 1px;"></div>
+        </div>
+        <div class="mid-2 mid">
+          <div class="midline1" style="height: 1px;"></div>
+          <li class="list-group-item bg-transparent">PRODUTOS</li>
+          <div class="midline2" style="height: 1px;"></div>
+        </div>
+        <div class="mid-3 mid">
+          <div class="midline1" style="height: 1px;"></div>
+          <li class="list-group-item bg-transparent">EMPRESA</li>
+          <div class="midline2" style="height: 1px;"></div>
+        </div>
+        <div class="mid-4 mid">
+          <div class="midline1" style="height: 1px;"></div>
+          <li class="list-group-item bg-transparent">BLOG</li>
+          <div class="midline2" style="height: 1px;"></div>
+        </div>
+      </di>
+    </div>
+  </div>
+  <div class="container justify-content-start p-mp rounded-2"
+    style="background-color: rgb(109, 109, 109);width: 70vw;height: auto; margin: 50px 220px 50px auto;padding: 20px;">
+    <div class="border border-1 border-dark rounded-2 bg-white p-3">
+
+      <header class="border-bottom border-1 border-dark pb-5 mb-5 d-flex flex-column">
+        <div class="container d-flex m-0" style="width: 100%; height: 120px;">
+          <div class="container border p-1 m-1 border-4 border-dark bg-white p-mp-Log"
+          style="height: 90%; width: auto;border-radius: 25%;">
+            <div class="p-2 p-mp-logo"
+              style="width: 100px;height: 100%; border-radius: 23%; background-color: rgba(107, 106, 106, 0.329);">
+              <img src="../src/img/M__1_-premium.png" width="100%" height="100%">
+            </div>
+          </div>
+          <div class="align-items-end justify-content-end border-start border-black hed-T" 
+            style="margin-left: 50px; padding-left: 50px;">
+            <h1 class="border-dark fw-bold p-mp-Title "
+             style="font-family:'GofSquids', serif; font-size: 60px;box-sizing: border-box; margin-right: 100px; ">ModuCAD</h1>
+            <h2 class="mt-2"
+              style="font-size: 30px; font-family: 'Times New Roman', Times, serif; font-style: italic;">PREMIUM</h2>
+              <div class="price" style="background-color: rgba(122, 233, 233, 0.13);">
+                <p style="font-size: 40px; font-weight: bold; display: flex; align-items: start; font-family: 'Chakra','Times New Roman', Times, serif;"><span
+                    style="font-size: 20px; font-weight: bold;">R$</span>620,00</span><span
+                    style="font-size: 20px; margin-top: 10px;">/mês</span></p>
+              </div>
+          </div>
+
+        </div>
+        <button class=" rounded-3 border-2 p-mp-buy-btn" id="buynow"
+          style=" border-color: rgb(129, 129, 129); position: relative; width: 70%; height: 70px; padding: 3px; margin: 30px auto;">
+          <div class="btn w-100 h-100 rounded-2 btn-buy"
+          
+            style="background-color: rgb(129, 129, 129); font-size: 20px;">
+            <div id="textBuyNow" style="margin: 0 auto; white-space:nowrap; font-size: 25px;">Comprar Agora!</div>
+          </div>
+        </button>
+      </header>
+      <div class="container mt-3 d-flex flex-column" style="height:50%;">
+        <aside class="container  p-4 border rounded-1 border-black"
+          style="width: 100%; background-color: rgba(107, 106, 106, 0.329);">
+          <p style="color: rgba(128, 128, 128, 0.514); text-decoration: underline;">última atualização 23/11/2023</p>
+          <p>Com ModuCAD PREMIUM, o usuário criar seus projetos com praticidade e eficiência.
+            A Modular desenvolveu essa ferramenta pensando exclusivamente nos designers e arquitetos
+            usuários do software Sketchup.
+            Ao adiquir o pacote, o usuário terá o total acesso a nossa biblioteca de componentes para móveis
+            planejados e acesso ao reckons, que por sua vez o permitirá gerar orçamentos rápidos e práticos,
+            com o auxílio de planos de corte e listas de materiais.
+            A moduCAD PREMIUM também conta com a disponibilidade de upgrades de texturas e elementos variados
+            para modernizar e valorizar ainda mais seus projetos.</p><br>
+
+          <p>
+            O pacote inclui:</p>
+          <p class="ms-2">
+            - Acesso ao ModuCAD (+1 usuário);<br>
+            - Acesso as bibliotecas (completo);<br>
+            - Acesso ao Reckons;<br>
+            - Update de texturas e componentes;
+          </p><br>
+
+          <p class="fw-bold">Requisitos :</p>
+
+          <p>- Software <a href="https://www.sketchup.com/pt-BR">Sketchup2022</a>;</span></p>
+
+          <p class="m-3 fst-italic"> Requisitos para skp:<br>
+            - .NET Framework versão 4.5.2<br>
+            <span class="fw-bold">(recomendado)</span><br>- Processador 2 GHz ou mais rápido;<br>
+            - 8 GB de RAM ou mais;<br>
+            - 700MB de espaço em disco disponível;<br>
+            - Placa de vídeo 3D com 1 GB ou mais de memória e compatível com aceleração por hardware;
+          </p>
+
+          <p class="fst-italic m-3"><span class="fw-bold">(mínimo)</span><br>
+            - Processador de 1 GHz;<br>
+            - 4 GB de RAM;<br>
+            - 500 MB de espaço livre em disco;<br>
+            - Placa de vídeo 3D com 512 MB ou mais de memória e compatível com aceleração de hardware.
+          </p>
+
+        </aside>
+
+        <aside class="container-sm mt-5 movieModular" style=" display: flex; ;justify-content: space-between; height: auto; width: 100%;">
+          <div class="video bg-black movie-play" style="position: relative; width: 90%">
+          <video width="90%" height="250px" controls style="margin-left: 5%;">
+            <source id="video-source" type="video/mp4" 
+            src="https://firebasestorage.googleapis.com/v0/b/modularplugin.appspot.com/o/movieModucad.mp4?alt=media&token=f6323c38-de75-46f6-9140-dec274196f6b">            Seu navegador não suporta o elemento de vídeo.
+          </video>
+        </div>
+        <button class=" rounded-3 border-2 ms-4 mt-4 getSketch"
+          style=" position: relative; border-color: rgb(212, 118, 30); width: 50%; height: 60px; padding: 3px;">
+          <div class="btn w-100 h-100 rounded-2 skp-text" style="background-color: rgb(212, 118, 30); font-size: 20px;">
+            <div style="margin: 4px auto; white-space:nowrap;">Obter Sketchup</div>
+          </div>
+        </button>
+        </aside>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <footer class="footerFix">
+    &copy; 2023 Modular, Inc. Todos os direitos reservados.
+  </footer>
+
+  <script type="module" src="../js/index.js"></script>
+  <script type="module" src="../js/indexUser.js"></script>
+
+  <script> window.addEventListener('load', function () {
+      const load = document.querySelector('.preloader');
+      setTimeout(() => {
+        load.classList.add('FadeOut');
+      }, 3000);
+    })</script>
+
+</body>
+
+</html>
