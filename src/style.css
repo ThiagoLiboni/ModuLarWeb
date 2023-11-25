@@ -674,7 +674,7 @@ header .main {
 .slogan {
     position: absolute;
     top: 25%;
-    width: 600px;
+    width: 100vw;
     font-size: 100%;
     left: 40px;
     overflow: hidden;

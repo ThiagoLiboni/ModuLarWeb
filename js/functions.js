@@ -136,6 +136,12 @@ export function refreshBar() {
         login.style.position = "absolute"
         footerFix.style.fontSize = "1.7ch";
         footerFix.style.left = "30%";
+        login.style.left = "inherit";
+        login.style.left = "23px";
+        login.style.top = "inherit";
+        login.style.bottom = "110px";
+        login.style.width = "auto";
+        login.style.height = "auto";
         if (currentPage == "main.html") {
             welcome.style.top = "5px";
             slogan.style.position = "absolute ";
@@ -205,6 +211,10 @@ export function refreshBar() {
         contBarH.style.display = "flex"
         footerFix.style.fontSize = "12px";
         footerFix.style.left = "30%";
+        login.style.left = "120px";
+        login.style.top = "15px";
+        login.style.width = "50px";
+        login.style.height = "50px";
 
         if (currentPage == "main.html") {
             pictures.style.display = "none";
@@ -234,6 +244,9 @@ export function refreshBar() {
             contato.style.alignItems = "center";
             contato.style.paddingLeft = "0px";
             contato.style.marginLeft = "0px";
+            wallSvg.style.display = "none"
+            wallBg.style.backgroundImage = "url(../src/img/texture4.png)";
+            wallBg.style.filter = "blur(0px)";
         }
         if (currentPage == "plans.html") {
             // nextPlan.style.right = "-70px";
@@ -297,17 +310,23 @@ export function refreshBar() {
     if (LCDWid < 462) {
         contBarV.style.display = "none";
         contBarH.style.display = "flex";
+        login.style.left = "120px";
+        login.style.top = "15px";
+        login.style.width = "50px";
+        login.style.height = "50px";
 
         if (LCDHei < 446) {
             footerFix.style.fontSize = "12px";
             footerFix.style.left = "30%";
         }
-
+        
         if (currentPage == "main.html") {
+            pictures.style.display = "none";
             welcome.style.top = "90px";
             slogan.style.position = "relative";
             slogan.style.top = "20%";
             slogan.style.margin = "50px 0px 0px 0px";
+            slogan.style.left = "-10px";
             slogan.style.display = "flex";
             slogan.style.flexDirection = "column";
             slogan.style.alignItems = "center";
@@ -328,6 +347,9 @@ export function refreshBar() {
             Footer.style.marginRight = "0px";
             map.style.width = "100%";
             contato.style.width = "100%";
+            wallSvg.style.display = "none"
+            wallBg.style.backgroundImage = "url(../src/img/texture4.png)";
+            wallBg.style.filter = "blur(0px)";
             if (LCDHei < 446) {
                 btnPlanfont.style.fontSize = "16px";
                 btnPlan.style.left = "35%";
