@@ -30,6 +30,10 @@
     font-family: Chakra;
     src: url(../src/font/FamiljenGrotesk-VariableFont_wght.ttf   );
 }
+@font-face {
+    font-family: Pavelt;
+    src: url(../src/font/Pavelt.ttf   );
+}
 
 
 body {
