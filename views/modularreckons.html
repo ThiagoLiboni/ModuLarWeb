@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="../src/img/fovicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="src/img/logoBlack.png" sizes="32x32" type="image/x-icon">
   <link rel="stylesheet" href="../Bootstrap/bootstrap.css">
   <link rel="stylesheet" href="../src/style.css">
   <link rel="stylesheet" href="../src/styleLoad.css">
@@ -213,7 +213,7 @@
         <aside class="container-sm mt-5 movieModular"
           style=" display: flex; ;justify-content: space-between; height: auto; width: 100%;">
           <div class="video bg-black movie-play" style="position: relative; width: 90%">
-            <video width="90%" height="250px" controls style="margin-left: 5%;">
+            <video width="90%" height="250px" controls poster="../src/img/posterVideo.PNG" style="margin-left: 5%;">
               <source id="video-source" type="video/mp4"
               src="https://firebasestorage.googleapis.com/v0/b/modularplugin.appspot.com/o/movieModucad.mp4?alt=media&token=f6323c38-de75-46f6-9140-dec274196f6b">              Seu navegador não suporta o elemento de vídeo.
             </video>
@@ -222,7 +222,7 @@
             style=" position: relative; border-color: rgb(212, 118, 30); width: 50%; height: 60px; padding: 3px;">
             <div class="btn w-100 h-100 rounded-2 skp-text"
               style="background-color: rgb(212, 118, 30); font-size: 20px;">
-              <div style="margin: 4px auto; white-space:nowrap;">Obter Sketchup</div>
+              <div id="text" style="margin: 4px auto; white-space:nowrap;">Obter Sketchup</div>
             </div>
           </button>
         </aside>
@@ -244,6 +244,7 @@
       const load = document.querySelector('.preloader');
       setTimeout(() => {
         load.classList.add('FadeOut');
+        document.querySelector('footer').style.display = "initial";
       }, 3000);
     })</script>
 

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="../src/img/fovicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="src/img/logoBlack.png" sizes="32x32" type="image/x-icon">
   <link rel="stylesheet" href="../Bootstrap/bootstrap.css">
   <link rel="stylesheet" href="../src/style.css">
   <link rel="stylesheet" href="../src/styleLoad.css">
@@ -208,6 +208,7 @@
       const load = document.querySelector('.preloader');
       setTimeout(() => {
         load.classList.add('FadeOut');
+        document.querySelector('footer').style.display = "initial";
       }, 3000);
     })</script>
 

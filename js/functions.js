@@ -15,7 +15,7 @@ export function refreshBar() {
     const footerFix = document.querySelector('.footerFix');
     const Footer = document.querySelector('.footer');
     const menu = document.querySelector('.menuMain-V');
-    const produtos = document.querySelectorAll('.produto');
+    const main = document.querySelector('.main');
 
     const login = document.querySelector('.Login');
     const user = document.querySelector('.bi-user');
@@ -40,7 +40,8 @@ export function refreshBar() {
     const mpTitle = document.querySelector('.p-mp-Title');
     const movie = document.querySelector('.movieModular');
     const moviePlay = document.querySelector('.movie-play');
-    const skpText = document.querySelector('.skp-text');
+    const skpText = document.querySelector('.skp-text #text');
+    const btnGetSkp = document.querySelector('.skp-text ');
     const price = document.querySelector('.price');
     const Price = document.querySelector('.Price');
     const btnBuyNow = document.querySelector('#buynow');
@@ -59,9 +60,10 @@ export function refreshBar() {
         user.style.right = "120px";
         footerFix.style.fontSize = "1.7ch";
         footerFix.style.left = "30%";
-
-
+        
+        
         if (currentPage == "main.html" || currentPage=="") {
+            main.style.height= "100vh"
             pictures.style.display = "initial"
             welcome.style.top = "110px";
             slogan.style.position = "absolute ";
@@ -69,7 +71,13 @@ export function refreshBar() {
             slogan.style.top = "30%";
             slogan.style.margin = "0px ";
             slogan.style.alignItems = "inherit";
+            sloganH1.style.fontSize = "70px";
+            sloganH2.style.fontSize = "18px";
+            sloganH2.style.marginRight = "inherit";
+            sloganH2.style.marginLeft = "150px";
             btnPlan.style.left = "100px";
+            btnPlan.style.width = "auto";
+            btnPlan.style.bottom = "20%";
             whoWe.style.marginRight = "0px";
             Footer.style.flexDirection = "initial";
             map.style.width = "50%";
@@ -82,7 +90,6 @@ export function refreshBar() {
             wallSvg.style.display = "none"
             wallBg.style.backgroundImage = "url(../src/img/texture4.png)";
             wallBg.style.filter = "blur(0px)";
-            sloganH1.style.fontSize = "70px";
 
 
         } else if (currentPage == "plans.html") {
@@ -130,7 +137,7 @@ export function refreshBar() {
 
 
     } else if (LCDWid > 992) {
-
+        
         contBarH.style.display = "none"
         contBarV.style.display = "flex"
         login.style.position = "absolute"
@@ -142,13 +149,22 @@ export function refreshBar() {
         login.style.bottom = "110px";
         login.style.width = "auto";
         login.style.height = "auto";
+
         if (currentPage == "main.html" || currentPage =="") {
+            main.style.height= "100vh"
+            pictures.style.display = "initial"
             welcome.style.top = "5px";
             slogan.style.position = "absolute ";
             slogan.style.left = "40px ";
             slogan.style.margin = "0px ";
             slogan.style.alignItems = "inherit";
-            btnPlan.style.left = "100px";
+            sloganH1.style.fontSize = "70px";
+            sloganH2.style.fontSize = "18px";
+            sloganH2.style.marginRight = "inherit";
+            sloganH2.style.marginLeft = "150px";
+            btnPlan.style.left = "140px";
+            btnPlan.style.width = "auto";
+            btnPlan.style.bottom = "20%";
             whoWe.style.marginRight = "70px";
             Footer.style.marginRight = "70px";
             Footer.style.flexDirection = "initial";
@@ -205,7 +221,7 @@ export function refreshBar() {
 
 
     }
-
+    
     if (LCDWid < 693 && LCDWid > 462) {
         contBarV.style.display = "none"
         contBarH.style.display = "flex"
@@ -215,8 +231,9 @@ export function refreshBar() {
         login.style.top = "15px";
         login.style.width = "50px";
         login.style.height = "50px";
-
+        
         if (currentPage == "main.html" || currentPage == "") {
+            main.style.height= "100vh"
             pictures.style.display = "none";
             slogan.style.position = "relative";
             slogan.style.width = "auto";
@@ -232,7 +249,6 @@ export function refreshBar() {
             sloganH2.style.marginLeft = "60px";
             btnPlan.style.left = "20%";
             btnPlan.style.width = "320px";
-            btnPlan.style.margin = "inherit";
             btnPlan.style.bottom = "20%";
             btnPlanfont.style.fontSize = "28px";
             whoWe.style.marginRight = "0px";
@@ -314,6 +330,8 @@ export function refreshBar() {
         login.style.top = "15px";
         login.style.width = "50px";
         login.style.height = "50px";
+        footerFix.style.fontSize = "3vw";
+        footerFix.style.left = "15%";
 
         if (LCDHei < 446) {
             footerFix.style.fontSize = "12px";
@@ -321,6 +339,7 @@ export function refreshBar() {
         }
         
         if (currentPage == "main.html" || currentPage=="") {
+            main.style.height= "92.5vh"
             pictures.style.display = "none";
             welcome.style.top = "90px";
             slogan.style.position = "relative";
@@ -334,19 +353,19 @@ export function refreshBar() {
             slogan.style.alignItems = "center";
             sloganH1.style.fontSize = "12vw";
             sloganH2.style.fontSize = "3.5vw";
-            footerFix.style.fontSize = "3vw";
-            footerFix.style.left = "15%";
             btnPlan.style.left = "20%";
+            btnPlan.style.bottom = "28%";
             btnPlan.style.width = "60%";
-            // btnPlan.style.bottom = "35%";
             btnPlanfont.style.fontSize = "5vw";
             whoWe.style.paddingLeft = "20px";
             whoWe.style.paddingRight = "20px";
             whoWe.style.marginRight = "0px";
             Footer.style.flexDirection = "column";
-            Footer.style.marginRight = "0px";
+            Footer.style.marginRight = "10px";
             map.style.width = "100%";
             contato.style.width = "100%";
+            contato.style.marginLeft = "5px";
+            contato.style.paddingLeft = "20px";
             wallSvg.style.display = "none"
             wallBg.style.backgroundImage = "url(../src/img/texture4.png)";
             wallBg.style.filter = "blur(0px)";
@@ -357,12 +376,9 @@ export function refreshBar() {
                 sloganH1.style.fontSize = "12vw";
                 sloganH2.style.fontSize = "2vw";
                 menu.style.justifyContent = "normal";
-            } else {
-                btnPlan.style.bottom = "20%";
-            }
+            } 
+
         } else if (currentPage == "plans.html") {
-            footerFix.style.fontSize = "3vw";
-            footerFix.style.left = "15%";
             // nextPlan.style.display = "none";
             // prevPlan.style.display = "none";
             compare.style.top = "170px"
@@ -394,13 +410,15 @@ export function refreshBar() {
             movie.style.flexDirection = "column";
             movie.style.alignItems = "center";
             moviePlay.style.width = "100%"
-            skpText.style.fontSize = "100%";
+            btnGetSkp.style.fontSize = "100%";
+            skpText.style.margin = "4px auto 4px -3px";
 
             price.style.width = "210px";
             price.style.left = "40%";
             price.style.top = "190px";
             price.style.scale = ".8";
             btnBuyNow.style.top = "40px";
+            
 
 
         } else if (currentPage == "compare.html") {
