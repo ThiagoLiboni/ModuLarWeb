@@ -431,7 +431,7 @@ export function refreshBar() {
             
 
 
-        } else if (currentPage == "compare.html") {
+        } else if (currentPage == "compare.html" || currentPage == "compare") {
             boxPlans.style.margin = "20px auto 0px auto";
             Plan.forEach(element => {
                 element.style.maxWidth = "79vw";
@@ -440,7 +440,12 @@ export function refreshBar() {
             Price.style.marginLeft = "10%";
             selectplan.style.marginTop = "80px";
             selectplan.style.width = "100vw";
-            selectplan.style.fontSize = "5.5vw";
+            selectplan.style.fontSize = "4vw";
+            boxPlans.style.margin = "20px auto 0px auto";
+            Plan.forEach(element => {
+                element.style.maxWidth = "79vw";
+            });
+            Plans.style.width = "90%";
         }
 
     } else if (currentPage == 'plans.html') {
