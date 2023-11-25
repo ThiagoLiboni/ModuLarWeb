@@ -62,7 +62,7 @@ export function refreshBar() {
         footerFix.style.left = "30%";
         
         
-        if (currentPage == "main.html" || currentPage=="") {
+        if (currentPage == "main.html" || currentPage == "main" || currentPage=="") {
             main.style.height= "100vh"
             pictures.style.display = "initial"
             welcome.style.top = "110px";
@@ -154,7 +154,7 @@ export function refreshBar() {
         login.style.width = "auto";
         login.style.height = "auto";
 
-        if (currentPage == "main.html" || currentPage =="") {
+        if (currentPage == "main.html" || currentPage == "main" || currentPage =="") {
             main.style.height= "100vh"
             pictures.style.display = "initial"
             welcome.style.top = "5px";
@@ -239,7 +239,7 @@ export function refreshBar() {
         login.style.width = "50px";
         login.style.height = "50px";
         
-        if (currentPage == "main.html" || currentPage == "") {
+        if (currentPage == "main.html" || currentPage == "main" || currentPage == "") {
             main.style.height= "100vh"
             pictures.style.display = "none";
             slogan.style.position = "relative";
@@ -325,8 +325,8 @@ export function refreshBar() {
             price.style.top = "190px";
             price.style.scale = ".8";
             btnBuyNow.style.top = "40px";
-
-
+            
+           
         }
 
     }
@@ -348,7 +348,7 @@ export function refreshBar() {
             footerFix.style.left = "30%";
         }
         
-        if (currentPage == "main.html" || currentPage=="") {
+        if (currentPage == "main.html" || currentPage == "main"  || currentPage=="") {
             main.style.height= "92.5vh"
             pictures.style.display = "none";
             welcome.style.top = "90px";
