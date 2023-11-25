@@ -61,7 +61,7 @@ export function refreshBar() {
         footerFix.style.left = "30%";
 
 
-        if (currentPage == "main.html" || currentPage=="") {
+        if (currentPage == "main.html" || currentPage=="modularsolution.netlify.app/") {
             pictures.style.display = "initial"
             welcome.style.top = "110px";
             slogan.style.position = "absolute ";
@@ -216,7 +216,7 @@ export function refreshBar() {
         login.style.width = "50px";
         login.style.height = "50px";
 
-        if (currentPage == "main.html" || currentPage == "") {
+        if (currentPage == "main.html" || currentPage == "https://modularsolution.netlify.app/") {
             pictures.style.display = "none";
             slogan.style.position = "relative";
             slogan.style.width = "auto";
@@ -320,7 +320,7 @@ export function refreshBar() {
             footerFix.style.left = "30%";
         }
         
-        if (currentPage == "main.html" || currentPage=="") {
+        if (currentPage == "main.html" || currentPage=="https://modularsolution.netlify.app/") {
             pictures.style.display = "none";
             welcome.style.top = "90px";
             slogan.style.position = "relative";
