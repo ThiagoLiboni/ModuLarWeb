@@ -148,7 +148,7 @@ mid4.addEventListener('mouseenter', functions.slideBar);
 
 
 mid1.addEventListener('click', () => {
-    if (currentPage == 'main.html') {
+    if (currentPage == 'main.html' || currentPage == "main") {
         let bar = document.querySelector('.menuMain-V');
         navbar.classList.remove('open');
         functions.hidebar();
@@ -171,7 +171,7 @@ mid2.addEventListener('click', () => {
 
 })
 mid3.addEventListener('click', () => {
-    if (currentPage == 'main.html') {
+    if (currentPage == 'main.html' || currentPage == "main") {
         let bar = document.querySelector('.menuMain-V');
         navbar.classList.remove('open');
         functions.hidebar();
@@ -184,7 +184,7 @@ mid3.addEventListener('click', () => {
         setTimeout(() => {
             window.scrollTo(0, scrollToPosition)
         }, 1200)
-    } else if (currentPage != "main.html") {
+    } else if (currentPage != "main.html" || currentPage == "main") {
         const statusRedir = true
         window.location.href = `../main.html#company`;
     }
@@ -212,7 +212,7 @@ function mostraHora() {
 
 
 
-if (currentPage == "main.html" || currentPage == "") {
+if (currentPage == "main.html" || currentPage == "main" || currentPage == "") {
 
     document.addEventListener('DOMContentLoaded', () => {
         const bloc = document.querySelector('.bloc');
