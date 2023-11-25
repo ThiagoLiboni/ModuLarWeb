@@ -61,7 +61,7 @@ export function refreshBar() {
         footerFix.style.left = "30%";
 
 
-        if (currentPage == "main.html") {
+        if (currentPage == "main.html" || currentPage=="") {
             pictures.style.display = "initial"
             welcome.style.top = "110px";
             slogan.style.position = "absolute ";
@@ -142,7 +142,7 @@ export function refreshBar() {
         login.style.bottom = "110px";
         login.style.width = "auto";
         login.style.height = "auto";
-        if (currentPage == "main.html") {
+        if (currentPage == "main.html" || currentPage =="") {
             welcome.style.top = "5px";
             slogan.style.position = "absolute ";
             slogan.style.left = "40px ";
@@ -216,7 +216,7 @@ export function refreshBar() {
         login.style.width = "50px";
         login.style.height = "50px";
 
-        if (currentPage == "main.html") {
+        if (currentPage == "main.html" || currentPage == "") {
             pictures.style.display = "none";
             slogan.style.position = "relative";
             slogan.style.width = "auto";
@@ -320,7 +320,7 @@ export function refreshBar() {
             footerFix.style.left = "30%";
         }
         
-        if (currentPage == "main.html") {
+        if (currentPage == "main.html" || currentPage=="") {
             pictures.style.display = "none";
             welcome.style.top = "90px";
             slogan.style.position = "relative";
