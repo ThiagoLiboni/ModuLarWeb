@@ -212,7 +212,7 @@ function mostraHora() {
 
 
 
-if (currentPage == "main.html") {
+if (currentPage == "main.html" || currentPage == "") {
 
     document.addEventListener('DOMContentLoaded', () => {
         const bloc = document.querySelector('.bloc');
