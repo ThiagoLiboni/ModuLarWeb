@@ -133,6 +133,10 @@ export function refreshBar() {
             });
             Plans.style.width = "1200px";
             Price.style.marginLeft = "0px";
+            selectplan.style.marginTop = "80px";
+            selectplan.style.width = "100vw";
+            selectplan.style.fontSize = "40px";
+
         }
 
 
@@ -217,6 +221,9 @@ export function refreshBar() {
             });
             Plans.style.width = "1200px";
             Price.style.marginLeft = "0px";
+            selectplan.style.width = "94.5vw";
+            selectplan.style.marginTop = "0px";
+            selectplan.style.fontSize = "40px";
         }
 
 
@@ -293,6 +300,9 @@ export function refreshBar() {
             });
             Plans.style.width = "90%";
             Price.style.marginLeft = "10%";
+            selectplan.style.marginTop = "80px";
+            selectplan.style.width = "100vw";
+            selectplan.style.fontSize = "5.5vw";
             
         } else if (currentPage == "modularpro.html" || currentPage == "modularpremium.html" || currentPage == "modularreckons.html") {
             pl1.style.width = "100%";
@@ -428,6 +438,9 @@ export function refreshBar() {
             });
             Plans.style.width = "90%";
             Price.style.marginLeft = "10%";
+            selectplan.style.marginTop = "80px";
+            selectplan.style.width = "100vw";
+            selectplan.style.fontSize = "5.5vw";
         }
 
     } else if (currentPage == 'plans.html') {
