@@ -74,7 +74,7 @@ header .main {
 
 
 .container-H {
-    z-index: 999;
+    z-index: 2;
     display: none;
     background-color: transparent;
     width: 100vw;
