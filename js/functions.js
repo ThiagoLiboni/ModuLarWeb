@@ -307,7 +307,7 @@ export function refreshBar() {
 
 
 
-    if (LCDWid < 462) {
+    if (LCDWid < 462 || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         contBarV.style.display = "none";
         contBarH.style.display = "flex";
         login.style.left = "120px";
@@ -416,6 +416,7 @@ export function refreshBar() {
         // nextPlan.style.display = "initial";
         // prevPlan.style.display = "initial";
     }
+   
 }
 
 
