@@ -142,8 +142,8 @@ const mid2 = document.querySelector('.mid-2');
 mid2.addEventListener('mouseenter', functions.slideBar);
 const mid3 = document.querySelector('.mid-3');
 mid3.addEventListener('mouseenter', functions.slideBar);
-const mid4 = document.querySelector('.mid-4');
-mid4.addEventListener('mouseenter', functions.slideBar);
+// const mid4 = document.querySelector('.mid-4');
+// mid4.addEventListener('mouseenter', functions.slideBar);
 
 
 
